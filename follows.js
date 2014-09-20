@@ -15,7 +15,7 @@
 	var defaultKey		= '6uKRDhQDbHq4Cu9YYuAj9CzDq78D5YgwjiBDRVIjKiJ43I0C', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [874565597], // Comma separated array of Xively Feed ID numbers
 		applicationName	= '', // Replaces Xively logo in the header
-		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
+		dataDuration	= '1 day', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
 		dataColor		= '', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 0; // To hide input form use value of 1, otherwise set to 0
@@ -151,7 +151,7 @@
 										renderer: 'line',
 										min: 70,
 										max: 90,
-										//min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										//max: parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										padding: {
 											top: 0.02,
