@@ -150,7 +150,7 @@
 										height: 200,
 										renderer: 'line',
 										min: 70,
-										max: 87),
+										max: 87,
 										padding: {
 											top: 0.02,
 											right: 0.02,
