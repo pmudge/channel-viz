@@ -149,8 +149,8 @@
 										width: 600,
 										height: 200,
 										renderer: 'line',
-										min: 70,
-										max: 87,
+										min: 75,
+										max: 85,
 										padding: {
 											top: 0.02,
 											right: 0.02,
